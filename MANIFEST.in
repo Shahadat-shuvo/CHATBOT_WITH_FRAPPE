@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include mybot *.css
+recursive-include mybot *.csv
+recursive-include mybot *.html
+recursive-include mybot *.ico
+recursive-include mybot *.js
+recursive-include mybot *.json
+recursive-include mybot *.md
+recursive-include mybot *.png
+recursive-include mybot *.py
+recursive-include mybot *.svg
+recursive-include mybot *.txt
+recursive-exclude mybot *.pyc

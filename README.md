@@ -1,0 +1,7 @@
+## Mybot
+
+Mybot
+
+#### License
+
+MIT
