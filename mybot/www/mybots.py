@@ -15,36 +15,8 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.document_loaders.csv_loader import CSVLoader
 import param
 import frappe
-
-# # from langchain.prompts import (
-# #     ChatPromptTemplate,
-# #     HumanMessagePromptTemplate,
-# #     MessagesPlaceholder,
-# # )
-# # from langchain.schema import SystemMessage
 import os
 
-
-# promptss = ChatPromptTemplate.from_messages(
-#     [
-#         SystemMessage(
-#             content="You are a chatbot having a conversation with a human."
-#         ),  # The persistent system prompt
-#         MessagesPlaceholder(
-#             variable_name="chat_history"
-#         ),  # Where the memory will be stored.
-#         HumanMessagePromptTemplate.from_template(
-#             "{user_input}"
-#         ),  # Where the human input will injected
-#     ]
-# )
-
-tuition_template = """
-    I want you as my assistance. Your primary task is to generate response according to my questions. /
-    This is a dialogue between us. Don't act as your own. Make a Sorry response If the answer is not there. Make the response short and informative. 
-    Follow Up Input: {question}
-    Standalone question:
-"""
 
 custom_template = """Use the following pieces of context to answer the question at the end. Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question, in its original language. If you do not know the answer reply with 'I am sorry'.
                         Make the response short. Do not make any extra response.
