@@ -17,7 +17,7 @@ import param
 import frappe
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
 
 loaders = [PyPDFLoader("/home/friday/Frappe/frappe-bench/sites/shuvo.com/public/files/intern.pdf"),
             PyPDFLoader("/home/friday/Frappe/frappe-bench/sites/shuvo.com/public/files/constitution.pdf")]
