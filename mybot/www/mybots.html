@@ -1,0 +1,47 @@
+mybot.html
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col border-right border-dark">
+            <div>
+                <h4 class="aler alert-info text-center p-5 shadow-lg bg-white rounded mb-8"> Ask ME! </h4>
+            </div>
+            <div class="chat-container" id="chat-container">
+                <!-- Messages will be dynamically added here -->
+            </div>
+
+            <div class="p-5 input-group">
+                <input class="form-control shadow bg-white rounded" type="text" id="inputField" name="userInput" required>
+                <button class="btn btn-outline secondary" id="button-addon2" onclick="processUserInput()">Send</button>
+                <div id="response"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="col pl-5">
+            <div class="row">
+                    <div class="col">
+                        <div>
+                            <h4 class="aler alert-danger shadow rounded p-5"> Chat History </h4>
+                        </div>
+                        <div id="list"></div>
+
+                        <div>
+                            <button class="btn btn-outline-danger" id="clearButton">Clear</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-dark shadow rounded float-right" id="reloadButton"><span class="font-weight-bolder">+</span>  New Chat</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- this is a sample default web page template -->
+
+{% endblock %}
