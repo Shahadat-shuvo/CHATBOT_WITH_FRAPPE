@@ -77,9 +77,9 @@ CUSTOM_QUESTION_PROMPT = PromptTemplate.from_template(custom_template)
 #     template=custom_template
 # )
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "YOUR_OPEN_AI_API_KEY"
 
-llm = OpenAI(model_name="gpt-3.5-turbo", temperature=0, openai_api_key="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")
+llm = OpenAI(model_name="gpt-3.5-turbo", temperature=0, openai_api_key="OPEN_AI_KEY")
 
 loaders = [PyPDFLoader("/home/friday/Frappe/frappe-bench/sites/shuvo.com/public/files/intern.pdf"),
             PyPDFLoader("/home/friday/Frappe/frappe-bench/sites/shuvo.com/public/files/constitution.pdf")]
